@@ -1,5 +1,6 @@
 import 'package:alex/classes/Top_design.dart';
 import 'package:alex/classes/bottom%20design.dart';
+import 'package:alex/screens/product_screen.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -269,33 +270,38 @@ class _MainScreenState extends State<MainScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  height: 140,
-                  child: Image.network(
-                    "https://images-na.ssl-images-amazon.com/images/I/81FLYO0y3yL._SL1500_.jpg",
+            InkWell(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => Product_Screen()));
+              },
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
                     height: 140,
-                    width: 140,
+                    child: Image.network(
+                      "https://images-na.ssl-images-amazon.com/images/I/81FLYO0y3yL._SL1500_.jpg",
+                      height: 140,
+                      width: 140,
+                    ),
                   ),
-                ),
-                Text(
-                  'TV Xiaomi \n Mi Led TV 55UHD \n 4K',
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(
-                  "\$11 999",
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.green),
-                )
-              ],
+                  Text(
+                    'TV Xiaomi \n Mi Led TV 55UHD \n 4K',
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "\$11 999",
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.green),
+                  )
+                ],
+              ),
             ),
             SizedBox(width: 15,),
             Column(

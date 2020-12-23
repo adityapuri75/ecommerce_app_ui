@@ -42,7 +42,7 @@ class TopDesign extends StatelessWidget {
               enabled: false,
               decoration: InputDecoration(
                 border: InputBorder.none,
-                  labelText: "I'm Loking for...", icon: Icon(Icons.search,color: Colors.black38,)),
+                  labelText: "I'm looking for...", icon: Icon(Icons.search,color: Colors.black38,)),
             ),
           ),
         ),
@@ -73,7 +73,7 @@ class TopDesign extends StatelessWidget {
                 children: <Widget>[
                   Icon(Icons.six_mp,color: Colors.green,size: 30,),
                   SizedBox(width: 10,),
-                  Text("ROZETKA",style: TextStyle(fontSize: 18,color: Colors.white,fontWeight: FontWeight.bold),)
+                  Text("ZIRKON",style: TextStyle(fontSize: 18,color: Colors.white,fontWeight: FontWeight.bold),)
                 ],
               ),
             ),
