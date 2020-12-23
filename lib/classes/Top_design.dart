@@ -12,8 +12,8 @@ class TopDesign extends StatelessWidget {
         top_bar(),
 
         Positioned(
-            top: 115,
-            left: 75,
+            top: 110,
+            left: 23,
             child: search()),
         // Positioned(
         //   top: 50,
@@ -29,17 +29,21 @@ class TopDesign extends StatelessWidget {
 
   Widget search(){
     return Container(
-      height: 50,
-      width: 250,
+      height: 56,
+      width: 350,
       child: Card(
-        elevation: 8,
+        elevation: 6,
         shape: StadiumBorder(),
         child: Padding(
           padding: const EdgeInsets.only(left: 8.0, right: 8),
-          child: TextField(
-            enabled: false,
-            decoration: InputDecoration(
-                labelText: 'I am Loking for..', icon: Icon(Icons.search)),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 8),
+            child: TextField(
+              enabled: false,
+              decoration: InputDecoration(
+                border: InputBorder.none,
+                  labelText: "I'm Loking for...", icon: Icon(Icons.search,color: Colors.black38,)),
+            ),
           ),
         ),
       ),
@@ -48,7 +52,7 @@ class TopDesign extends StatelessWidget {
   Widget background(){
     return Container(
       color: Colors.white,
-      height: 165,
+      height: 167,
       width: 400,
     );
   }
@@ -56,7 +60,7 @@ class TopDesign extends StatelessWidget {
     return Container(
       height: 135,
       decoration: BoxDecoration(
-          color: Colors.blueAccent
+          color: Color(0xff172536),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -67,7 +71,7 @@ class TopDesign extends StatelessWidget {
             Container(
               child: Row(
                 children: <Widget>[
-                  Icon(Icons.six_mp,color: Colors.red,size: 30,),
+                  Icon(Icons.six_mp,color: Colors.green,size: 30,),
                   SizedBox(width: 10,),
                   Text("ROZETKA",style: TextStyle(fontSize: 18,color: Colors.white,fontWeight: FontWeight.bold),)
                 ],

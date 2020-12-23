@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "Puri Fast Food",
         theme: ThemeData(
-        primaryColor: Colors.lightBlueAccent,
+        primaryColor: Colors.white,
 
     ),
       home: MainScreen(),
